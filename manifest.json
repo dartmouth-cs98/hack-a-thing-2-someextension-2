@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2, 
+	"name": "My Extension",
+	"version": "0.1",
+	"content_scripts": [
+  		{
+  			/* example value for "matches": ["https://mail.google.com/*", 
+  				"http://mail.google.com/*"] */
+    		"matches": [
+      			"<all_urls>"
+    		],
+    		"js": ["jquery-3.2.1.min.js", "content.js"]
+  		}
+
+	],
+	"browser_action": {
+		"default_icon": "icon.png"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	}
+}
