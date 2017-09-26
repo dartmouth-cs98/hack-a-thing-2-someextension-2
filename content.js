@@ -11,7 +11,7 @@ chrome.runtime.onMessage.addListener(
 				urls.push(firstHref);
 			}
 
-			console.log(urls[1]);
+			//console.log(urls[1]);
 			// sending a message to background to open a new tab
 			chrome.runtime.sendMessage({"message": "open_new_tab", "url": urls});
 		}
