@@ -22,7 +22,7 @@ chrome.runtime.onMessage.addListener(
 				for (var i = 0; i < urls.length; i++){
 					chrome.tabs.create({"url": request.url[i]});
 				}	
-				alert("tab created!");
+				alert("tabs created!");
 			}
 			//alert(urls.join('\n'));
 		}
