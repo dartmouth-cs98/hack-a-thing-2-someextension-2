@@ -7,8 +7,12 @@ chrome.runtime.onMessage.addListener(
 			var urls = [];
 			for (var i = 0; i < 5; i++){
 				var firstHref = $("a[href^='http']").eq(i).attr("href");
-				console.log(firstHref);
-				urls.push(firstHref);
+				//checking to be sure there is a link there
+				if (firstHref != null){
+					urls.push(firstHref);
+					console.log(firstHref);
+				}
+				
 			}
 
 			//console.log(urls[1]);
